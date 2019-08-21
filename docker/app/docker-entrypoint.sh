@@ -15,7 +15,7 @@ if [ "$1" = 'php-fpm' ] || [ "$1" = 'bin/console' ]; then
 
     # The first time volumes are mounted, the project needs to be recreated
     if [ ! -f composer.json ]; then
-        composer create-project "symfony/skeleton $SYMFONY_VERSION" tmp --stability=$STABILITY --prefer-dist --no-progress --no-interaction
+        composer install
         jq '.extra.symfony.docker=true' tmp/composer.json > tmp/composer.tmp.json
         rm tmp/composer.json
         mv tmp/composer.tmp.json tmp/composer.json
