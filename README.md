@@ -2,10 +2,12 @@
 
 This will verify citizen's identity document.I have used docker and symfony 4.3.
 ## Getting Started
-
-1. Run `docker-compose up` (the logs will be displayed in the current shell)
-2. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
-3. **Enjoy!**
+1. Run `git init` to initiate git in empty folder.
+2. Run `git clone  https://github.com/codeselfdev/task1.git` for cloning this repo into your local repo.
+3.Run `cd task1` to navigate in the root app folder.
+3. Now Run `docker-compose up` (the logs will be displayed in the current shell)
+4. Run `composer install` for installing all the necesary packages if not already downloaded.
+5. **Ready!**
 
 ## Testing
 
